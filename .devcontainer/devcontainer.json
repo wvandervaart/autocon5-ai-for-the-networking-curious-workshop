@@ -44,7 +44,11 @@
     "postCreateCommand": "bash postCreate.sh",
     // Recommended machine size. Codespaces prompts the user to pick a
     // size on first launch; this is the minimum we want them to choose.
-
+    "hostRequirements": {
+        "cpus": 8,
+        "memory": "32gb",
+        "storage": "64gb"
+    },
     // Standard Codespace workspace mount path.
     // ${localWorkspaceFolderBasename} resolves to the repo name.
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
